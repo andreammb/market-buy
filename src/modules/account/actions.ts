@@ -133,7 +133,7 @@ export async function updateCustomerPassword(
     return {
       customer: currentState.customer,
       success: false,
-      error: "Old password is incorrect",
+      error: "El password viejo es incorrecto",
     }
   }
 
@@ -141,7 +141,7 @@ export async function updateCustomerPassword(
     return {
       customer: currentState.customer,
       success: false,
-      error: "Passwords do not match",
+      error: "Los Passwords son diferentes",
     }
   }
 

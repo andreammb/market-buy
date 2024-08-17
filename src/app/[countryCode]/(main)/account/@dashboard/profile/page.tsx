@@ -11,7 +11,7 @@ import { notFound } from "next/navigation"
 
 export const metadata: Metadata = {
   title: "Profile",
-  description: "View and edit your Medusa Store profile.",
+  description: "Ver y editar tu perfil MarketBuy.",
 }
 
 export default async function Profile() {
@@ -25,11 +25,9 @@ export default async function Profile() {
   return (
     <div className="w-full" data-testid="profile-page-wrapper">
       <div className="mb-8 flex flex-col gap-y-4">
-        <h1 className="text-2xl-semi">Profile</h1>
+        <h1 className="text-2xl-semi">Perfil</h1>
         <p className="text-base-regular">
-          View and update your profile information, including your name, email,
-          and phone number. You can also update your billing address, or change
-          your password.
+          Ver y editar tu información de perfil, actualizar dirección de facturación y/o cambiar password.
         </p>
       </div>
       <div className="flex flex-col gap-y-8 w-full">

@@ -23,7 +23,7 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
   'data-testid': dataTestid
 }) => {
   const initialImage = thumbnail || images?.[0]?.url
-
+  const newImage = initialImage?.replace("localhost", process.env.NEXT_PUBLIC_MEDUSA_IMAGES_URL??"45.79.25.217")
   return (
     <Container
       className={clx(
@@ -41,7 +41,8 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
       )}
       data-testid={dataTestid}
     >
-      <ImageOrPlaceholder image={initialImage} size={size} />
+      <img src={newImage} />
+      {/* <ImageOrPlaceholder image={initialImage} size={size} /> */}
     </Container>
   )
 }
